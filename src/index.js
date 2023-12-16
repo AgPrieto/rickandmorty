@@ -4,7 +4,7 @@ const server = express();
 const PORT = 10000;
 const {conn} = require('./DB_connection');
 
-server.use(cors());
+
 conn.sync({force: false});
 
 server.listen(PORT, () => {
