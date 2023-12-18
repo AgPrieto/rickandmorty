@@ -7,7 +7,6 @@ const { postFav } = require('../controllers/postFav');
 const { deleteFav } = require('../controllers/deleteFav');
 const { postUser } = require('../controllers/postUser');
 const { checkEmail } = require('../controllers/checkEmail');
-const { checkCredentials } = require('../controllers/checkCredentials');
 
 
 
@@ -17,6 +16,5 @@ router.post('/login', postUser);
 router.post('/fav', postFav);
 router.delete('/fav/:id', deleteFav);
 router.get('/register', checkEmail);
-router.get('/check', checkCredentials);
 
 module.exports = router;
